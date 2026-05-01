@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swathi | AI & Software Developer</title>
+    <meta name="description"
+        content="Professional portfolio of Swathi - Aspiring Software & Web Developer specializing in AI and Data Science.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll & Background Elements -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+    <div class="bg-gradient-overlay"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mobile Navigation -->
+    <header class="mobile-header">
+        <div class="hamburger" id="mobile-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- DASHBOARD SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-profile">
+            <div class="profile-img">
+                <img src="profile.jpeg" alt="Swathi">
+                <div class="profile-img-aura"></div>
+                <div class="status-indicator"></div>
+            </div>
+            <h3>Swathi</h3>
+            <p>Aspiring Software & Web Developer | AI & Data Science</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home-alt"></i> <span>Home</span></a></li>
+                <li><a href="#about"><i class="fas fa-user-circle"></i> <span>About Me</span></a></li>
+                <li><a href="#skills"><i class="fas fa-layer-group"></i> <span>Tech Stack</span></a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> <span>Experience</span></a></li>
+                <li><a href="#certifications"><i class="fas fa-award"></i> <span>Certifications</span></a></li>
+                <li><a href="#projects"><i class="fas fa-code-branch"></i> <span>Projects</span></a></li>
+                <li><a href="#contact"><i class="fas fa-paper-plane"></i> <span>Contact</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <a href="https://github.com/shettyswathi905-cpu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/swathi-shetty-68b33a291" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:shettyswathi905@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i> <span>Dark Mode</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- 00. HOME SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-grid container">
+                <div class="hero-info">
+                    <span class="badge reveal-item">Available for Job</span>
+                    <p class="hero-intro reveal-item">Hi, my name is</p>
+                    <h1 class="hero-name reveal-item" style="--reveal-delay: 0.1s">SWATHI</h1>
+                    <h2 class="hero-role reveal-item" style="--reveal-delay: 0.2s">
+                        I'm an <span class="typing-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-quote reveal-item" style="--reveal-delay: 0.3s">
+                        "Passionate about building intelligent, data-driven, and scalable software solutions."
+                    </p>
+                    <div class="hero-cta reveal-item" style="--reveal-delay: 0.4s">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="https://drive.google.com/file/d/1cbtWa7GL48GYT8Fz2iwMIzPkWgdsNe5P/view?usp=drivesdk"
+                            class="btn btn-outline" download><i class="fas fa-download"></i> Resume</a>
+                    </div>
+                </div>
+
+                <div class="hero-stats reveal-item" style="--reveal-delay: 0.5s">
+                    <div class="stat-box">
+                        <span class="stat-number" data-val="2">0</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-val="4">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-val="3">0</span>
+                        <span class="stat-label">Core Projects</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-val="9.25">0</span>
+                        <span class="stat-label">MCA CGPA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 01. ABOUT ME -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-index">01</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal-item">
+                        <p class="intro">
+                            I am an <strong>MCA postgraduate student</strong> with a strong academic background and a
+                            deep-seated passion for Software Development, Artificial Intelligence, and Data Science.
+                        </p>
+                        <p>
+                            I possess solid technical skills in Python, SQL, and full-stack web development,
+                            complemented by practical experience in building end-to-end projects. My work spans machine
+                            learning models, algorithm visualization, and web security assessments.
+                        </p>
+                        <p>
+                            I am committed to continuous learning and aim to contribute effectively to innovative,
+                            technology-driven organizations.
+                        </p>
+
+                        <div class="personal-interests">
+
+                            <br>
+                            <h4><b><u>Personal Attributes</u></b></h4>
+                            <div class="interest-pills">
+                                <span><i class="fas fa-brain"></i> Problem Solving</span>
+                                <span><i class="fas fa-clock"></i> Time Management</span>
+                                <span><i class="fas fa-palette"></i> Drawing</span>
+                                <span><i class="fas fa-volleyball"></i> Throwball Game</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-block reveal-item" style="--reveal-delay: 0.2s">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="year">2024 - 2026</span>
+                                    <h4>MCA</h4>
+                                    <p>Dr. Ambedkar Institute of Technology, Bengaluru</p>
+                                    <span class="result">CGPA: 9.25</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="year">2021 - 2024</span>
+                                    <h4>BCA</h4>
+                                    <p>Bhandarkar's Arts & Science College, Kundapura</p>
+                                    <span class="result">CGPA: 9.45</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="year">2019 - 2021</span>
+                                    <h4>PUC</h4>
+                                    <p>Govt PU College Kundapura</p>
+                                    <span class="result">Result: 82.16%</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="year">2016 - 2019</span>
+                                    <h4>SSLC</h4>
+                                    <p>M.B.P Govt High School Gujjadi</p>
+                                    <span class="result">Result: 89.12%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. TECH STACK -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-index">02</span>
+                    <h2 class="section-title">Tech Stack</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card reveal-item" style="--reveal-delay: 0.1s">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Programming</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C Language</li>
+                            <li>Java (Basic)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal-item" style="--reveal-delay: 0.2s">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Technologies</h3>
+                        <ul>
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal-item" style="--reveal-delay: 0.3s">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & Data Science</h3>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Data Science</li>
+                            <li>Data Visualization</li>
+                            <li>CNN / TensorFlow</li>
+                            <li>NLP / Deep Learning</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal-item" style="--reveal-delay: 0.4s">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Systems</h3>
+                        <ul>
+                            <li>MySQL / SQL / Xampp</li>
+                            <li>Tableau</li>
+                            <li>Pandas / NumPy</li>
+                            <li>Linux </li>
+                            <li>VS Code / Jupyter Notebook</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. EXPERIENCE -->
+        <section id="experience" class="exp-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-index">03</span>
+                    <h2 class="section-title">Experience</h2>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="job-card reveal-item">
+                        <div class="job-header">
+                            <div class="job-icon"><i class="fas fa-microchip"></i></div>
+                            <div class="job-meta">
+                                <h4>AI Research & Development Intern</h4>
+                                <p class="company">ComedKares Innovation Hub</p>
+                                <span class="duration">4 Months - Present</span>
+                            </div>
+                        </div>
+                        <ul class="job-points">
+                            <li>Developing an <strong>AI-Based Plagiarism Detection System</strong> utilizing Deep
+                                Learning and LLMs.</li>
+                            <li>Implementing semantic analysis and advanced NLP techniques for identification.</li>
+                            <li>Collaborating on building scalable, AI-driven solutions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-card reveal-item" style="--reveal-delay: 0.2s">
+                        <div class="job-header">
+                            <div class="job-icon"><i class="fab fa-python"></i></div>
+                            <div class="job-meta">
+                                <h4>Python & Artificial Intelligence Intern</h4>
+                                <p class="company">Codec Technology</p>
+                                <span class="duration">1 Month</span>
+                            </div>
+                        </div>
+                        <ul class="job-points">
+                            <li>Worked on data handling and preprocessing for AI models.</li>
+                            <li>Gained hands-on model understanding and tuning experience.</li>
+                            <li>Performed analytical tasks in AI-based projects.</li>
+                        </ul>
+                        <div class="job-cta-links">
+                            <a href="https://drive.google.com/file/d/1ulZq_-6ubVi0GM0m-yNudamFprz3K0Sa/view?usp=drivesdk"
+                                target="_blank"><i class="fas fa-file-invoice"></i> Offer Letter</a>
+                            <a href="https://drive.google.com/file/d/17lonh_PIddY5zOH4rvRElKTPN_k6z7PC/view?usp=drivesdk"
+                                target="_blank"><i class="fas fa-certificate"></i> Completion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. CERTIFICATIONS -->
+        <section id="certifications" class="certs-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-index">04</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+
+                <div class="certs-wrapper">
+                    <div class="cert-box reveal-item">
+                        <i class="fab fa-google"></i>
+                        <div class="cert-info">
+                            <h4>Cybersecurity Certificate</h4>
+                            <p>Google Coursera</p>
+                            <a href="https://drive.google.com/file/d/197YlKYyxF_3PgPG9qNEdBo7qpm3aMx_5/view?usp=drivesdk"
+                                target="_blank">Verify <i class="fas fa-external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="cert-box reveal-item" style="--reveal-delay: 0.1s">
+                        <i class="fas fa-robot"></i>
+                        <div class="cert-info">
+                            <h4>AI Fluency Foundations</h4>
+                            <p>Anthropic</p>
+                            <a href="https://drive.google.com/file/d/1GayTrNH2U1jJigXnLIXuSbkHmSsZq1z4/view?usp=drivesdk"
+                                target="_blank">Verify <i class="fas fa-external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="cert-box reveal-item" style="--reveal-delay: 0.2s">
+                        <i class="fab fa-python"></i>
+                        <div class="cert-info">
+                            <h4>Python for Data Science</h4>
+                            <p>NPTEL</p>
+                            <a href="https://drive.google.com/file/d/1XJ_oLTxvpSGj8nb5uenevI8z8M8UN3iP/view?usp=drivesdk"
+                                target="_blank">Verify <i class="fas fa-external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="cert-box reveal-item" style="--reveal-delay: 0.3s">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="cert-info">
+                            <h4>Data Analytics Simulation</h4>
+                            <p>Deloitte (Forage)</p>
+                            <a href="https://drive.google.com/file/d/1O9K0a6wuDlaZHLEGndsjsMXtmNEOJ_Dc/view?usp=drivesdk"
+                                target="_blank">Verify <i class="fas fa-external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. PROJECTS -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-index">05</span>
+                    <h2 class="section-title">Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card reveal-item">
+                        <div class="project-image">
+                            <img src="img_sorting.png" alt="Sorting Viz">
+                            <div class="project-overlay">
+                                <a href="https://github.com/shettyswathi905-cpu/VISUALIZATION-AND-COMPARATIVE-ANALYSIS-OF-SORTING-ALGORITHMS-.git"
+                                    target="_blank"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <div class="project-desc">
+                            <h3>Sorting Algorithm Visualization</h3>
+                            <p>Interactive tool comparing 11 sorting algorithms with real-time performance analysis.</p>
+                            <div class="project-tech"><span>JS</span><span>HTML</span><span>CSS</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal-item" style="--reveal-delay: 0.2s">
+                        <div class="project-image">
+                            <img src="img_fruit.png" alt="Fruit Explorer">
+                            <div class="project-overlay">
+                                <a href="https://github.com/shettyswathi905-cpu/FRUIT-EXPLORER-.git" target="_blank"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <div class="project-desc">
+                            <h3>Fruits Explorer</h3>
+                            <p>Deep Learning model for fruit classification using TensorFlow and custom CNN
+                                architecture.</p>
+                            <div class="project-tech"><span>Python</span><span>TF</span><span>Flask</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal-item" style="--reveal-delay: 0.3s">
+                        <div class="project-image">
+                            <img src="img_security.png" alt="Security Tool">
+                            <div class="project-overlay">
+                                <a href="https://github.com/shettyswathi905-cpu/AUTOMATED-WEB-SECURITY-VULNERABILITY-ASSESSMENT-TOOL-.git"
+                                    target="_blank"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <div class="project-desc">
+                            <h3>Security Assessment Tool</h3>
+                            <p>Automated vulnerability scanner for web applications with risk scoring and suggestions.
+                            </p>
+                            <div class="project-tech"><span>React</span><span>Python</span><span>Flask</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06. CONTACT -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="contact-card reveal-item">
+                    <div class="contact-info">
+                        <h2>Let's Connect!</h2>
+                        <p>I'm currently looking for new job opportunities. My inbox is always open!</p>
+                        <div class="contact-links">
+                            <a href="mailto:shettyswathi905@gmail.com" class="btn btn-primary"><i
+                                    class="fas fa-envelope"></i> Email Me</a>
+                            <a href="https://www.linkedin.com/in/swathi-shetty-68b33a291" target="_blank"
+                                class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="contact-extra">
+                        <p>Prefer a hard copy? Download my resume:</p>
+                        <a href="https://drive.google.com/file/d/1cbtWa7GL48GYT8Fz2iwMIzPkWgdsNe5P/view?usp=drivesdk"
+                            class="btn btn-glass" download><i class="fas fa-file-pdf"></i> Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-left">
+                        <p>© 2026 Built By Swathi</p>
+                    </div>
+                    <div class="footer-right">
+                        <p class="declaration">“I hereby declare that the information provided above is true and correct
+                            to the best of my knowledge.”</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
